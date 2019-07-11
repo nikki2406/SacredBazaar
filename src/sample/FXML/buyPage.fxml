@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeView?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.buyPageController">
+   <children>
+      <Pane layoutX="2.0" layoutY="1.0" prefHeight="72.0" prefWidth="1280.0">
+         <children>
+            <Label fx:id="welcomeMsg" alignment="CENTER_RIGHT" layoutX="1007.0" layoutY="26.0" prefHeight="19.0" prefWidth="160.0" text="Welcome User" textAlignment="RIGHT">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Group layoutX="976.0" layoutY="24.0">
+               <children>
+                  <JFXHamburger fx:id="userDropdownMenu" layoutX="230.0" onMouseClicked="#menuClick" onMouseEntered="#menuClick" />
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <JFXButton fx:id="categoryButton" layoutX="22.0" layoutY="20.0" onAction="#categoryButton" prefHeight="49.0" prefWidth="54.0" style="-fx-background-color: #2196f3;" text="Category">
+         <graphic>
+            <ImageView fx:id="categoryLogo" fitHeight="22.0" fitWidth="7.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="searchButton" layoutX="908.0" layoutY="30.0" onAction="#searchProduct" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #2196f3;" text="Search" />
+      <JFXTextField fx:id="searchBar" layoutX="236.0" layoutY="27.0" prefHeight="37.0" prefWidth="658.0" />
+      <Pane fx:id="categoryPane" disable="true" layoutX="13.0" layoutY="79.0" opacity="0.0" prefHeight="649.0" prefWidth="213.0">
+         <children>
+            <JFXTreeView fx:id="categoryTree" layoutX="2.0" layoutY="40.0" prefHeight="586.0" prefWidth="215.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="userDropMenu" disable="true" layoutX="984.0" layoutY="82.0" opacity="0.0" prefHeight="333.0" prefWidth="307.0" style="-fx-border-color: black; -fx-background-color: grey;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="36.0" layoutY="18.0" onAction="#goToMyProfile" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: #2196f3;" text="My Profile">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="76.0" onAction="#goToMyCart" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: #2196f3;" text="My Cart">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="133.0" onAction="#goToNotification" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: #2196f3;" text="Notification">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="189.0" onAction="#closeApp" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: #2196f3;" text="Logout">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="merchantOnlyButton" buttonType="RAISED" layoutX="33.0" layoutY="244.0" onAction="#goToInventoryManagement" prefHeight="49.0" prefWidth="240.0" style="-fx-background-color: #2196f3;" text="Inventory Management">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="245.0" layoutY="137.0" prefHeight="592.0" prefWidth="640.0" style="-fx-background-color: #d0d3d4;">
+         <children>
+            <Label layoutX="55.0" layoutY="50.0" text="Delivery Address:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="deliveryAddressBox" layoutX="55.0" layoutY="89.0" style="-fx-border-color: black; -fx-background-color: white;" />
+            <Label layoutX="56.0" layoutY="367.0" text="Payment Method:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="COD" layoutX="79.0" layoutY="412.0" selected="true" text="COD">
+               <toggleGroup>
+                  <ToggleGroup fx:id="payment" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="UPI" disable="true" layoutX="79.0" layoutY="441.0" text="UPI" toggleGroup="$payment" />
+            <JFXRadioButton fx:id="debitCard" disable="true" layoutX="79.0" layoutY="469.0" text="Debit Card" toggleGroup="$payment" />
+            <JFXRadioButton fx:id="creditCard" disable="true" layoutX="80.0" layoutY="496.0" text="Credit Card" toggleGroup="$payment" />
+            <JFXButton layoutX="451.0" layoutY="511.0" onAction="#applyChanges" prefHeight="32.0" prefWidth="68.0" style="-fx-border-color: black;" text="Apply" />
+            <JFXRadioButton layoutX="81.0" layoutY="288.0" text="Home address">
+               <toggleGroup>
+                  <ToggleGroup fx:id="addressType" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton layoutX="218.0" layoutY="287.0" text="Office address" toggleGroup="$addressType" />
+            <Label layoutX="56.0" layoutY="331.0" text="Quantity:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="quantityTextField" layoutX="138.0" layoutY="331.0" prefHeight="26.0" prefWidth="38.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="967.0" layoutY="147.0" prefHeight="546.0" prefWidth="227.0" style="-fx-border-color: #d0d3d4;">
+         <children>
+            <Label layoutX="7.0" layoutY="40.0" text="Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="productName" layoutX="66.0" layoutY="40.0" prefHeight="27.0" prefWidth="151.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="89.0" text="Address:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="finalAddress" layoutX="19.0" layoutY="130.0" prefHeight="120.0" prefWidth="151.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="272.0" text="Product Price:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="productPrice" layoutX="137.0" layoutY="279.0" text="\$$$" />
+            <Label layoutX="14.0" layoutY="333.0" text="Delivery Cost:" />
+            <Label fx:id="deliveryCost" layoutX="135.0" layoutY="333.0" text="₹ 99" />
+            <JFXButton layoutX="80.0" layoutY="425.0" onAction="#buy" prefHeight="42.0" prefWidth="68.0" style="-fx-border-color: black;" text="Buy" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Line endX="100.0" layoutX="110.0" layoutY="352.0" startX="-88.99993896484375" startY="-3.0517578125E-5" />
+            <Label layoutX="20.0" layoutY="369.0" text="Total:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalAmount" layoutX="136.0" layoutY="369.0" prefHeight="18.0" prefWidth="68.0" text="\$$$">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="308.0" text="Quantity:" />
+            <Label fx:id="finalQuantity" layoutX="135.0" layoutY="308.0" text="1" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

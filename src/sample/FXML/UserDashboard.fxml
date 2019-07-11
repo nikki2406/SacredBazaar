@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeView?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.UserDashboardController">
+   <children>
+      <Pane layoutX="2.0" layoutY="1.0" prefHeight="72.0" prefWidth="1280.0">
+         <children>
+            <Label fx:id="welcomeMsg" alignment="CENTER_RIGHT" layoutX="1007.0" layoutY="26.0" prefHeight="19.0" prefWidth="160.0" text="Welcome User" textAlignment="RIGHT">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Group layoutX="976.0" layoutY="24.0">
+               <children>
+                  <JFXHamburger fx:id="userDropdownMenu" layoutX="230.0" onMouseClicked="#menuClick" onMouseEntered="#menuClick" />
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <JFXButton fx:id="categoryButton" layoutX="22.0" layoutY="20.0" onAction="#categoryButton" prefHeight="49.0" prefWidth="54.0" style="-fx-background-color: #2196f3;" text="Category">
+         <graphic>
+            <ImageView fx:id="categoryLogo" fitHeight="22.0" fitWidth="7.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="searchButton" layoutX="908.0" layoutY="30.0" onAction="#searchProduct" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #2196f3;" text="Search" />
+      <JFXTextField fx:id="searchBar" layoutX="236.0" layoutY="27.0" prefHeight="37.0" prefWidth="658.0" />
+      <Pane fx:id="categoryPane" disable="true" layoutX="13.0" layoutY="79.0" opacity="0.0" prefHeight="649.0" prefWidth="213.0">
+         <children>
+            <JFXTreeView fx:id="categoryTree" layoutX="2.0" layoutY="40.0" prefHeight="586.0" prefWidth="215.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="userDropMenu" disable="true" layoutX="984.0" layoutY="82.0" opacity="0.0" prefHeight="333.0" prefWidth="307.0" style="-fx-border-color: black; -fx-background-color: grey;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="36.0" layoutY="18.0" onAction="#goToMyProfile" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: #2196f3;" text="My Profile">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="76.0" onAction="#goToMyCart" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: #2196f3;" text="My Cart">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="133.0" onAction="#goToNotification" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: #2196f3;" text="Notification">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="189.0" onAction="#closeApp" prefHeight="49.0" prefWidth="236.0" style="-fx-background-color: #2196f3;" text="Logout">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="merchantOnlyButton" buttonType="RAISED" layoutX="33.0" layoutY="244.0" onAction="#goToInventoryManagement" prefHeight="49.0" prefWidth="240.0" style="-fx-background-color: #2196f3;" text="Inventory Management">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="2.0" layoutY="90.0" prefHeight="628.0" prefWidth="220.0">
+         <children>
+            <Group layoutX="35.0" layoutY="25.0">
+               <children>
+                  <Label layoutX="-8.0" layoutY="15.0" text="Hello">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userFullName" layoutX="-8.0" layoutY="37.0" prefHeight="30.0" prefWidth="178.0" text="User">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+            <Group layoutX="62.900001525878906" layoutY="103.9000015258789">
+               <children>
+                  <JFXButton fx:id="personalInfoTab" layoutX="4.099998474121094" layoutY="70.0999984741211" onAction="#showPersonalInfoTab" prefHeight="42.0" prefWidth="154.0" style="-fx-background-color: #2196f3;" text="Personal Infrmation" />
+                  <JFXButton fx:id="myCartTab" layoutX="3.0999984741210938" layoutY="130.0999984741211" onAction="#showMyCartTab" prefHeight="42.0" prefWidth="154.0" style="-fx-background-color: #2196f3;" text="My Cart" />
+               </children>
+            </Group>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="myCartPane" disable="true" layoutX="225.0" layoutY="121.0" prefHeight="602.0" prefWidth="1038.0">
+         <children>
+            <ListView fx:id="cartListView" layoutY="128.0" prefHeight="471.0" prefWidth="1042.0" />
+            <Label layoutX="510.0" layoutY="17.0" text="My Cart">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="fromDate" layoutX="56.0" layoutY="49.0" />
+            <JFXDatePicker fx:id="toDate" layoutX="268.0" layoutY="49.0" />
+            <JFXTextField fx:id="minPrice" layoutX="633.0" layoutY="51.0" />
+            <JFXTextField fx:id="maxPrice" layoutX="817.0" layoutY="51.0" />
+            <Label layoutX="237.0" layoutY="50.0" text="to">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="784.0" layoutY="50.0" text="to">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="460.0" layoutY="51.0" onAction="#showCartByDate" text="Show" />
+            <JFXButton buttonType="RAISED" layoutX="968.0" layoutY="51.0" onAction="#showCartByPrice" text="Show" />
+            <JFXCheckBox fx:id="deliveredProducts" layoutX="54.0" layoutY="96.0" text="Show Delivered Products" />
+            <JFXCheckBox fx:id="undeliveredProducts" layoutX="264.0" layoutY="95.0" text="Show Undelivered Products" />
+            <JFXButton buttonType="RAISED" layoutX="461.0" layoutY="91.0" onAction="#deliveredOrUndelivered" prefHeight="26.0" prefWidth="50.0" text="Apply" />
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="personalInfoPane" layoutX="222.0" layoutY="123.0" prefHeight="598.0" prefWidth="1059.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1134.0" prefWidth="1026.0">
+               <children>
+                  <Pane prefHeight="1124.0" prefWidth="950.0">
+                     <children>
+                        <Group layoutX="54.0" layoutY="41.0">
+                           <children>
+                              <Label layoutY="2.0" prefHeight="18.0" prefWidth="95.0" text="Username:">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="usernameLabel" editable="false" layoutX="157.0" prefHeight="26.0" prefWidth="209.0" promptText="Username" text="XYZ" />
+                           </children>
+                        </Group>
+                        <Group layoutX="54.0" layoutY="109.0">
+                           <children>
+                              <Label layoutX="1.0" text="First Name">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="161.0" layoutY="1.0" text="Last Name">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="firstName" editable="false" layoutY="27.0" prefHeight="26.0" prefWidth="130.0" text="Kashyap" />
+                              <TextField fx:id="lastName" editable="false" layoutX="160.0" layoutY="27.0" text="Nasit" />
+                           </children>
+                        </Group>
+                        <Group layoutX="50.0" layoutY="195.0">
+                           <children>
+                              <Label layoutX="3.0" text="Change Password:">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXPasswordField fx:id="currentPassword" labelFloat="true" layoutX="2.0" layoutY="33.0" promptText="Current Password" />
+                              <JFXPasswordField fx:id="newPassword" labelFloat="true" layoutX="1.0" layoutY="77.0" promptText="New Password" />
+                              <JFXPasswordField fx:id="confirmPassword" labelFloat="true" layoutY="123.0" promptText="Confirm Password" />
+                              <JFXButton fx:id="changePas" layoutX="-1.0" layoutY="168.0" onAction="#changePassword" text="Change Password" />
+                           </children>
+                        </Group>
+                        <Group layoutX="51.0" layoutY="432.0">
+                           <children>
+                              <Label layoutX="3.0" text="Phone Number:">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="contactNum" editable="false" layoutY="33.0" prefHeight="26.0" prefWidth="178.0" text="9559889113" />
+                           </children>
+                        </Group>
+                        <Group layoutX="51.0" layoutY="527.0">
+                           <children>
+                              <Label layoutX="3.0" text="Email ID:">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="emailID" editable="false" layoutY="33.0" prefHeight="26.0" prefWidth="178.0" text="kashyapnasit@gmail.com" />
+                           </children>
+                        </Group>
+                        <Group layoutX="53.0" layoutY="632.0">
+                           <children>
+                              <Label layoutX="3.0" text="Gender:">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton fx:id="maleRadioButton" disable="true" layoutY="36.0" mnemonicParsing="false" selected="true" text="Male">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="gender" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="femaleRadioButton" disable="true" layoutX="102.0" layoutY="35.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+                              <RadioButton fx:id="otherRadioBaton" disable="true" layoutX="211.0" layoutY="35.0" mnemonicParsing="false" text="Other" toggleGroup="$gender" />
+                           </children>
+                        </Group>
+                        <Group layoutX="57.0" layoutY="734.0">
+                           <children>
+                              <Label text="Date Of Birth:">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXDatePicker fx:id="dob" editable="false" layoutX="1.0" layoutY="24.0" overLay="true" promptText="29/01/1999" />
+                           </children>
+                        </Group>
+                        <Group layoutX="52.0" layoutY="831.0">
+                           <children>
+                              <Label layoutX="6.0" text="Address:">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="addressL1" editable="false" labelFloat="true" layoutX="1.0" layoutY="46.0" prefHeight="26.0" prefWidth="322.0" promptText="Zip Code, Street Address" text="123" />
+                              <JFXTextField fx:id="addressL2" editable="false" labelFloat="true" layoutX="1.0" layoutY="98.0" prefHeight="26.0" prefWidth="322.0" promptText="City, State" text="Gujarat" />
+                              <JFXTextField fx:id="addressL3" editable="false" labelFloat="true" layoutY="152.0" prefHeight="26.0" prefWidth="322.0" promptText="Country" text="India" />
+                           </children>
+                        </Group>
+                        <Group layoutX="177.89999389648438" layoutY="1095.9000244140625">
+                           <children>
+                              <JFXButton fx:id="editInfo" layoutX="4.100006103515625" layoutY="-52.9000244140625" onAction="#editInformation" style="-fx-background-color: #2196f3;" text="Edit" />
+                              <JFXButton fx:id="updateInfo" layoutX="87.10000610351562" layoutY="-50.9000244140625" onAction="#updateInformation" style="-fx-background-color: #2196f3;" text="Save" />
+                           </children>
+                        </Group>
+                        <Line endX="-52.0" endY="532.0" layoutX="546.0" layoutY="34.0" startX="-52.0" startY="6.0" />
+                        <Label layoutX="564.0" layoutY="46.0" prefHeight="25.0" prefWidth="155.0" text="Total amount spent:">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font></Label>
+                        <Label fx:id="totalAmountSpent" layoutX="770.0" layoutY="46.0" text="\$$$">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXDatePicker fx:id="satrtingDate" layoutX="548.0" layoutY="109.0" promptText="From" />
+                        <JFXDatePicker fx:id="endingDate" layoutX="750.0" layoutY="109.0" promptText="To" />
+                        <JFXButton buttonType="RAISED" layoutX="698.0" layoutY="162.0" onAction="#changeTotalSpent" text="Apply" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

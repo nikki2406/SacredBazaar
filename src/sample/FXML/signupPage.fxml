@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.signupPageController">
+   <children>
+      <JFXButton fx:id="menuButton1" layoutX="40.0" layoutY="16.0" onAction="#menuButton1OnClickAction" prefHeight="60.0" prefWidth="200.0" text="Personal Information" />
+      <JFXButton fx:id="menuButton2" layoutX="240.0" layoutY="16.0" onAction="#menuButton2OnClickAction" prefHeight="60.0" prefWidth="200.0" text="Contact Details" />
+      <JFXButton fx:id="menuButton3" layoutX="440.0" layoutY="16.0" onAction="#menuButton3OnClickAction" prefHeight="60.0" prefWidth="200.0" text="Username/Passwd" />
+      <JFXButton fx:id="menuButton4" layoutX="640.0" layoutY="16.0" onAction="#menuButton4OnClickAction" prefHeight="60.0" prefWidth="200.0" text="Merchant Inforation" />
+      <JFXButton fx:id="menuButton5" layoutX="840.0" layoutY="17.0" onAction="#menuButton5OnClickAction" prefHeight="60.0" prefWidth="200.0" text="Terms and Conditions" />
+      <JFXButton cancelButton="true" layoutX="1236.0" layoutY="9.0" onAction="#close" prefHeight="38.0" prefWidth="16.0" text="X">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="l" layoutX="14.0" layoutY="690.0" text=" " textFill="WHITE" />
+      <AnchorPane fx:id="pane5" layoutY="65.0" prefHeight="656.0" prefWidth="1285.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <JFXTextArea layoutX="20.0" layoutY="20.0" prefHeight="470.0" prefWidth="1240.0" text="1. ACCEPTANCE OF TERMS OF USE FOR THIS WEBSITE&#10;&#10;1.1 You must read these Flexera Software Website Terms of Use (&quot;Terms&quot;) carefully.&#10;FLEXERA SOFTWARE AND ITS AFFILIATES (&quot;Flexera Software&quot;) PROVIDE THIS WEBSITE TO YOU, YOUR EMPLOYEES, AGENTS, AND CONTRACTORS, AND ANY OTHER ENTITY ON WHOSE BEHALF YOU ACCEPT THESE TERMS (COLLECTIVELY &quot;YOU&quot;), SUBJECT TO THESE TERMS. THESE TERMS ARE ENTERED INTO BY AND BETWEEN FLEXERA SOFTWARE AND YOU, AND YOU ACCEPT THEM BY: (a) PLACING AN ORDER THROUGH THIS WEBSITE; (b) USING THE WEBSITE IN ANY OTHER MANNER; AND/OR (c) ACKNOWLEDGING AGREEMENT WITH THESE TERMS. IF YOU DO NOT AGREE TO ALL OF THESE TERMS, DO NOT USE THIS WEBSITE.&#10;&#10;1.2 This website (&quot;Website&quot;) includes without limitation: (a) Online Support and Service Center services, and other on-line services accessible via the Website (collectively the &quot;Services&quot;); (b) information such as technical, contractual, product, program, pricing, marketing, and other valuable information (&quot;Information&quot;); and (c) content such as data, text, software, music, sound, photographs, graphics, video, messages, or other materials (&quot;Content&quot;). Flexera Software controls and operates its Websites from various locations and makes no representation that this Website is appropriate or available for use in all locations. Flexera Software products and services may not be available in Your location, and deliverables may vary among locations. If You are using the Website on behalf of Your employer, You represent and warrant that You are authorized to accept these Terms on Your employer's behalf, and that Your employer agrees to indemnify You and Flexera Software for violations of these Terms. In addition to the Terms and unless otherwise noted, the standard Flexera Software terms and conditions of sale in your jurisdiction govern purchases You make through the Website, unless You have in effect a separate valid written purchase or license agreement with Flexera Software for that product or service, in which case that separate agreement governs, and in cases of conflict, prevails.&#10;&#10;2. YOUR OBLIGATIONS AND CONDUCT&#10;&#10;2.1 In consideration of Your use of the Website, You agree to: (a) provide accurate, current, and complete information about You as may be prompted by a registration form on the Website (the &quot;Registration Data&quot;); (b) maintain the security of your password and identification; (c) maintain and promptly update the Registration Data, and any information You provide to Flexera Software, to keep it accurate, current and complete; and (d) accept all risks of unauthorized access to information and Registration Data. You have sole responsibility for adequate protection and backup of data and/or equipment used in connection with the Website.&#10;&#10;2.2 You are entirely responsible for all Content that You upload, post or otherwise transmit via the Website. You agree not to upload, post or otherwise transmit via the Website Content that: (a) is inaccurate, harmful, obscene, pornographic, defamatory, racist, violent, offensive, harassing, or otherwise objectionable to Flexera Software or other users of the Website; (b) includes unauthorized disclosure of personal information; (c) violates or infringes anyone's intellectual property rights; or (d) contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment. Flexera Software reserves the right to edit or remove Content that violates these Terms or that contains third-party commercial advertisements.&#10;&#10;2.3 You agree that You will not use the Website to: (a) transmit spam, bulk or unsolicited communications; (b) pretend to be Flexera Software or someone else, or spoof Flexera Software's or someone else's identity; (c) forge headers or otherwise manipulate identifiers (including URLs) in order to disguise the origin of any Content transmitted through the Services; (d) misrepresent your affiliation with a person or entity; (e) disrupt the normal flow of dialogue or otherwise act in a manner that negatively affects other users' ability to use the Website; (f) engage in activities that would violate any fiduciary relationship, any applicable local, state, national or international law, or any regulations having the force of law, including but not limited to attempting to compromise the security of any networked account or site, operating an illegal lottery or gambling operation, stalking, or making threats of harm; or (g) collect or store personal data about other users unless specifically authorized by such users.&#10;&#10;3. CONFIDENTIALITY OF FLEXERA SOFTWARE INFORMATION&#10;&#10;3.1 You may obtain direct access via the Website to certain confidential information of Flexera Software and its suppliers, including without limitation technical, contractual, product, program, pricing, marketing and other valuable information that should reasonably be understood as confidential (&quot;Confidential Information&quot;). You must hold Confidential Information in strict confidence. Title to Confidential Information remains with Flexera Software and its partners.&#10;&#10;3.2 Your obligations regarding Confidential Information expire five (5) years after the date of disclosure. Upon termination of the Terms or Flexera Software's written request, You must cease use of Confidential Information and return or destroy it.&#10;&#10;3.3 The Terms impose no obligation upon You with respect to Confidential Information that You can establish by legally sufficient evidence: (a) You possessed prior to Your receipt from Flexera Software, without an obligation to maintain its confidentiality; (b) is or becomes generally known to the public through no act or omission by You, or otherwise without violation of the Terms; (c) You obtained from a third party who had the right to disclose it, without an obligation to keep such information confidential; (d) You independently developed without the use of Confidential Information and without the participation of individuals who have had access to it, or (e) in response to a valid order by a court or other governmental body, as otherwise required by law, or as necessary to establish the rights of either party under these Terms and as disclosed after prior notice to Flexera Software adequate to afford Flexera Software the opportunity to object to the disclosure.&#10;&#10;4. CONTENT SUBMITTED TO Flexera Software&#10;&#10;4.1 Flexera Software does not claim ownership of the Content You place on the Website and shall have no obligation of any kind with respect to such Content. Unless otherwise stated herein, or in Flexera Software's Legal and Privacy Notices, any Content You provide in connection with this Website shall be deemed to be provided on a nonconfidential basis. Flexera Software shall be free to use or disseminate such Content on an unrestricted basis for any purpose, and You grant Flexera Software and all other users of the Website an irrevocable, worldwide, royalty-free, nonexclusive license to use, reproduce, modify, distribute, transmit, display, perform, adapt, resell and publish such Content (including in digital form). You represent and warrant that you have proper authorization for the worldwide transfer and processing among Flexera Software, its affiliates, and third-party providers of any information that You may provide on the Website.&#10;&#10;4.2 Flexera Software and its designees reserve the right to monitor, restrict access to, edit or remove any Content that is available via the Website.&#10;&#10;5. DELIVERY OF EMAIL&#10;&#10;Flexera Software will attempt to deliver all of the email that is addressed to Your email address on Flexera Software's Services. However, the nature of email is such that Flexera Software cannot guarantee delivery of such email.&#10;&#10;6. INDEMNITY&#10;&#10;You agree to indemnify and hold Flexera Software and its subsidiaries, affiliates, shareholders, officers, directors, agents, licensors, suppliers, alliance members, other partners, employees and representatives harmless from any claim or demand, including reasonable attorneys' fees, made by any third party due to or arising out of Your Content, Your use of or connection to the Website (including any use by You on behalf of Your employer), Your violation of the Terms, or Your violation of any rights of another.&#10;&#10;7. NOTICES; MODIFICATION AND TERMINATION OF SERVICES; AMENDMENT OF TERMS&#10;&#10;Flexera Software may provide notice to You via email, regular mail, or posting notices or links to notices on the Website. Flexera Software reserves the right at any time to modify, suspend or terminate the Services (or any part thereof), and/or Your use of or access to them, with or without notice. Flexera Software may also delete, or bar access to or use of, all related Information and files. Flexera Software will not be liable to You or any third-party for any modification, suspension, or termination of the Services, or loss of related information. Flexera Software may amend these Terms at any time by posting the amended terms on this Website.&#10;&#10;8. ADVERTISEMENTS AND PROMOTIONS&#10;&#10;Flexera Software may run advertisements and promotions from third parties on the Website. Your correspondence or business dealings with, or participation in promotions of, advertisers other than Flexera Software found on or through the Website, including payment and delivery of related goods or services, and any other terms, conditions, warranties or representations associated with such dealings, are solely between You and such advertiser. Flexera Software is not responsible or liable for any loss or damage of any sort incurred as the result of any such dealings or as the result of the presence of such non-Flexera Software advertisers on the Website.&#10;&#10;9. CONTENT PROVIDED VIA LINKS&#10;&#10;You may find links to other Internet sites or resources on the Website. You acknowledge and agree that Flexera Software is not responsible for the availability of such external sites or resources, and does not endorse and is not responsible or liable for any content, advertising, products, or other materials on or available from such sites or resources. Flexera Software will not be responsible or liable, directly or indirectly, for any actual or alleged damage or loss caused by or in connection with use of or reliance on any such content, goods or services available on or through any such site or resource.&#10;&#10;10. INTELLECTUAL PROPERTY RIGHTS&#10;&#10;10.1 Except as expressly authorized by Flexera Software or by Content providers, You agree not to reproduce, modify, rent, lease, loan, sell, distribute, mirror, frame, republish, download, transmit, or create derivative works of the Content of others, in whole or in part, by any means. You must not modify, decompile, or reverse engineer any software Flexera Software discloses to You, and You must not remove or modify any copyright or trademark notice, or other notice of ownership.&#10;&#10;10.2 &quot;Flexera Software Trademarks&quot; means all names, marks, brands, logos, designs, trade dress, slogans and other designations Flexera Software uses in connection with its products and services. You agree to comply with the Flexera Software Trademark and Logo Usage Requirements. You may not remove or alter any Flexera Software Trademarks, or co-brand your own products or material with Flexera Software Trademarks, without Flexera Software's prior written consent. You acknowledge Flexera Software's rights in Flexera Software Trademarks and agree that any use of Flexera Software Trademarks by You shall inure to Flexera Software's sole benefit. You agree not to incorporate any Flexera Software Trademarks into Your trademarks, service marks, company names, Internet addresses, domain names, or any other similar designations, for use on or in connection with computer or Internet-related products, services or technologies.&#10;&#10;10.3 Flexera Software is committed to respecting others' intellectual property rights, and we ask our users to do the same. If You believe that Your work has been copied in a way that constitutes copyright infringement on our Website, please contact our legal department via email at: contracts@flexerasoftware.com.&#10;&#10;10.4 Unless explicitly stated herein, nothing in these Terms shall be construed as conferring any license to intellectual property rights, whether by estoppel, implication, or otherwise. Permission is granted to display, copy, distribute and download Content owned by Flexera Software on this Website provided that: (a) the copyright notice pertaining to the Content remains, and a permission notice (e.g., &quot;Used with permission&quot;) is added to such Content; (b) the use of such Content is solely for personal and non-commercial use; (c) such Content will not be copied or posted on any networked computer or published in any medium, except as explicitly permitted by valid permission or license covering such materials; and (d) no modifications are made to such Content. This permission terminates automatically without notice if You breach any of the terms or conditions in this Section 10.4. Upon termination, You must immediately destroy any downloaded and/or printed Content.&#10;&#10;11. DISCLAIMER OF WARRANTIES&#10;&#10;11.1 YOUR USE OF THE WEBSITE IS AT YOUR SOLE RISK UNLESS OTHERWISE EXPLICITLY STATED. THE WEBSITE, INCLUDING THE INFORMATION, SERVICES AND CONTENT (AS DEFINED IN SECTION 1.2) IS PROVIDED ON AN &quot;AS IS&quot; &quot;AS AVAILABLE&quot; AND &quot;WITH ALL FAULTS&quot; BASIS. FLEXERA SOFTWARE DISCLAIMS ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS, AND WARRANTIES OF ANY KIND, INCLUDING ANY IMPLIED WARRANTY OR CONDITION OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. FLEXERA SOFTWARE MAKES NO REPRESENTATIONS, WARRANTIES, CONDITIONS OR GUARANTEES AS TO THE USEFULNESS QUALITY, SUITABILITY, TRUTH, ACCURACY OR COMPLETENESS OF THE WEBSITE.&#10;&#10;11.2 FLEXERA SOFTWARE MAKES NO WARRANTY OR REPRESENTATION THAT: (a) THE WEBSITE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE; (b) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE WEBSITE WILL BE ACCURATE OR RELIABLE; (c) THE QUALITY OF ANY PRODUCTS, SERVICES, CONTENT, INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED FROM THE WEBSITE WILL MEET YOUR EXPECTATIONS OR REQUIREMENTS; OR (d) ANY ERRORS IN THE WEBSITE WILL BE CORRECTED.&#10;&#10;11.3 YOU ASSUME ALL RISK FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM OBTAINING ANY CONTENT FROM THE WEBSITE, INCLUDING ANY DAMAGES RESULTING FROM COMPUTER VIRUSES.&#10;&#10;12. LIMITATION OF LIABILITY&#10;&#10;12.1 TO THE FULL EXTENT PERMITTED BY LAW, FLEXERA SOFTWARE IS NOT LIABLE FOR ANY DIRECT, INDIRECT, PUNITIVE, SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES (INCLUDING, WITHOUT LIMITATION, LOSS OF BUSINESS, REVENUE, PROFITS, GOODWILL, USE, DATA, ELECTRONICALLY TRANSMITTED ORDERS, OR OTHER ECONOMIC ADVANTAGE) ARISING OUT OF OR IN CONNECTION WITH THE WEBSITE, EVEN IF FLEXERA SOFTWARE HAS PREVIOUSLY BEEN ADVISED OF, OR REASONABLY COULD HAVE FORESEEN, THE POSSIBILITY OF SUCH DAMAGES, HOWEVER THEY ARISE, WHETHER IN BREACH OF CONTRACT OR IN TORT (INCLUDING NEGLIGENCE), INCLUDING WITHOUT LIMITATION DAMAGES DUE TO: (a) THE USE OF OR THE INABILITY TO USE THE WEBSITE; (b) THE COST OF PROCUREMENT OF SUBSTITUTE GOODS AND SERVICES RESULTING FROM ANY GOODS, DATA, INFORMATION OR SERVICES PURCHASED OR OBTAINED, OR MESSAGES RECEIVED OR TRANSACTIONS ENTERED INTO, THROUGH OR FROM THE WEBSITE; (c) STATEMENTS OR CONDUCT OF ANY THIRD PARTY ON THE WEBSITE, INCLUDING WITHOUT LIMITATION UNAUTHORIZED ACCESS TO OR ALTERATION OF TRANSMISSIONS OR DATA, MALICIOUS OR CRIMINAL BEHAVIOR, OR FALSE OR FRAUDULENT TRANSACTIONS; OR (d) CONTENT OR INFORMATION YOU MAY DOWNLOAD, USE, MODIFY OR DISTRIBUTE.&#10;&#10;12.2 TO THE EXTENT THAT ANY JURISDICTION DOES NOT ALLOW THE EXCLUSION OR LIMITATION OF DIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES, PORTIONS OF THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY.&#10;&#10;13. FLEXERA SOFTWARE'S PRIVACY POLICY&#10;&#10;You consent to the collection, processing and storage by Flexera Software of Your personal information in accordance with the terms of Flexera Software's Privacy Policy, which is available here. You agree to comply with all applicable laws and regulations, and the terms of Flexera Software's Privacy Policy, with respect to any access, use and/or submission by You of any personal information in connection with this Website.&#10;&#10;14. GENERAL TERMS&#10;&#10;14.1 The Terms constitute the entire agreement between You and Flexera Software relating to their subject matter, and cancel and supersede any prior versions of the Terms. No modification to the Terms will be binding, unless in writing and signed by an authorized Flexera Software representative. You must not assign or otherwise transfer the Terms or any right granted hereunder. You also may be subject to additional terms and conditions that may apply when You use Flexera Software or third-party products or services.&#10;&#10;14.2 You agree that any material breach of Sections 2, 3, 4, 6, and 10 of the Terms will result in irreparable harm to Flexera Software for which damages would be an inadequate remedy and, therefore, in addition to its rights and remedies otherwise available at law, Flexera Software will be entitled to equitable relief, including both a preliminary and permanent injunction, if such a breach occurs. You waive any requirement for the posting of a bond or other security if Flexera Software seeks such an injunction.&#10;&#10;14.3 California law and controlling U.S. federal law govern any action related to the Terms and/or Your use of the Website. Choice of law rules of any jurisdiction and the United Nations Convention on Contracts for the International Sale of Goods will not apply to any dispute under the Terms. You and Flexera Software agree to submit to the personal and exclusive jurisdiction of the courts located within the county of Santa Clara, California, U.S.A.&#10;&#10;14.4 Services, Content, and product derived or obtained from this Website may be subject to the U.S. export laws and the export or import laws of other countries. You agree to comply strictly with all such laws and, in particular, shall: (a) obtain any export, reexport, or import authorizations required by U.S. or your local laws; (b) not use Services, Content, or direct product from this Website to design, develop or produce missile, chemical/biological, or nuclear weaponry; and (c) not provide Services, Content, or direct product from this Website to prohibited countries and entities identified in the U.S. export regulations.&#10;&#10;14.5 Rights and obligations under the Terms which by their nature should survive will remain in full effect after termination or expiration of the Terms.&#10;&#10;14.6 The Website may contain forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Such forward-looking statements may include statements regarding market expectations and opportunities, expectations about financials, research and development and strategies, statements concerning Flexera Software's roadmaps, market share growth, and product and service development and introduction, and our continuous evaluation of the competitiveness of our product and service offerings. These forward-looking statements are just predictions and involve risks and uncertainties. Actual results may differ materially from results discussed in the forward-looking statements. Factors that may cause such a difference include risks related to adverse changes in general economic conditions, failure to reduce costs, lack of success in technical advancements, the timely development, production and acceptance of new products and services, and Flexera Software's ability to compete in a rapidly changing marketplace.&#10;&#10;14.7 Any express waiver or failure to exercise promptly any right under the Terms will not create a continuing waiver or any expectation of non-enforcement. If any provision of the Terms is held invalid by any law or regulation of any government, or by any court or arbitrator, the parties agree that such provision will be replaced with a new provision that accomplishes the original business purpose, and the other provisions of the Terms will remain in full force and effect" />
+            <JFXButton fx:id="iAgreeButton" buttonType="RAISED" layoutX="1191.0" layoutY="496.0" onAction="#iAgreeAction" style="-fx-background-color: LIGHTCYAN;" text="I agree.">
+               <font>
+                  <Font name="Cantarell Light" size="20.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.5673076923076923" endY="0.6298076923076923">
+                     <stops>
+                        <Stop color="#ff0a0a" />
+                        <Stop color="#d9c718" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane4" layoutY="65.0" prefHeight="550.0" prefWidth="1280.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="1196.0" layoutY="492.0" onAction="#menuButton3OnClickAction" style="-fx-background-color: LIGHTCYAN;" text="Next">
+               <font>
+                  <Font name="Cantarell Light" size="20.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8413461538461539" endY="1.0">
+                     <stops>
+                        <Stop color="#08e2ff" />
+                        <Stop color="#61db18" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Label layoutX="52.0" layoutY="194.0" prefHeight="50.0" prefWidth="200.0" text="Account Holder Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="accountHolderName" layoutX="284.0" layoutY="207.0" prefHeight="25.0" prefWidth="503.0" />
+            <Label layoutX="52.0" layoutY="144.0" prefHeight="50.0" prefWidth="200.0" text="Account Number:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="accountNumber" layoutX="284.0" layoutY="157.0" prefHeight="25.0" prefWidth="503.0" />
+            <Label layoutX="52.0" layoutY="94.0" prefHeight="50.0" prefWidth="200.0" text="PAN Number:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="PANNumber" layoutX="284.0" layoutY="107.0" prefHeight="25.0" prefWidth="503.0" />
+            <Label layoutX="52.0" layoutY="44.0" prefHeight="50.0" prefWidth="200.0" text="Bank Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="bankName" layoutX="284.0" layoutY="57.0" prefHeight="25.0" prefWidth="503.0" />
+            <Label layoutX="52.0" layoutY="238.0" prefHeight="50.0" prefWidth="200.0" text="IFCS Code">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="IFCSCode" layoutX="284.0" layoutY="263.0" prefHeight="25.0" prefWidth="503.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane3" layoutY="65.0" prefHeight="550.0" prefWidth="1280.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <AnchorPane layoutX="40.0" layoutY="40.0" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" text="User Name:">
+                     <font>
+                        <Font name="Cantarell Thin" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="usernameField" layoutX="263.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0" promptText="Username">
+                     <font>
+                        <Font name="Cantarell Light" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="40.0" layoutY="140.0" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" text="Password:">
+                     <font>
+                        <Font name="Cantarell Thin" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXPasswordField fx:id="passwordField" layoutX="265.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0" promptText="Your password" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="40.0" layoutY="240.0" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" text="Confirm password:">
+                     <font>
+                        <Font name="Cantarell Thin" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXPasswordField fx:id="confirmPasswordField" layoutX="265.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0" promptText="Confirm Password" />
+               </children>
+            </AnchorPane>
+            <JFXButton buttonType="RAISED" layoutX="1197.0" layoutY="496.0" onAction="#menuButton4OnClickAction" style="-fx-background-color: LIGHTCYAN;" text="Next">
+               <font>
+                  <Font name="Cantarell Light" size="20.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8413461538461539" endY="1.0">
+                     <stops>
+                        <Stop color="#08e2ff" />
+                        <Stop color="#61db18" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutY="65.0" prefHeight="550.0" prefWidth="1280.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <AnchorPane layoutX="40.0" layoutY="40.0" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" text="Phone number:">
+                     <font>
+                        <Font name="Cantarell Thin" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="phoneNumberField" layoutX="263.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0" promptText="Your phone number">
+                     <font>
+                        <Font name="Cantarell Light" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="40.0" layoutY="140.0" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" text="Email:">
+                     <font>
+                        <Font name="Cantarell Thin" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="emailField" layoutX="263.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0" promptText="Your Email">
+                     <font>
+                        <Font name="Cantarell Light" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="40.0" layoutY="240.0" prefHeight="212.0" prefWidth="663.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" text="Address:">
+                     <font>
+                        <Font name="Cantarell Thin" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="addressLine1Field" layoutX="263.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0" promptText="Zip Code, Street address">
+                     <font>
+                        <Font name="Cantarell Light" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="addressLine2Field" layoutX="263.0" layoutY="60.0" prefHeight="40.0" prefWidth="400.0" promptText="City, State">
+                     <font>
+                        <Font name="Cantarell Light" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="addressLine3Field" layoutX="263.0" layoutY="110.0" prefHeight="40.0" prefWidth="400.0" promptText="Country">
+                     <font>
+                        <Font name="Cantarell Light" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <JFXButton buttonType="RAISED" layoutX="1197.0" layoutY="496.0" onAction="#menuButton3OnClickAction" style="-fx-background-color: LIGHTCYAN;" text="Next">
+               <font>
+                  <Font name="Cantarell Light" size="20.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8413461538461539" endY="1.0">
+                     <stops>
+                        <Stop color="#08e2ff" />
+                        <Stop color="#61db18" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane1" layoutY="65.0" prefHeight="550.0" prefWidth="1280.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <AnchorPane layoutX="40.0" layoutY="40.0" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" text="First Name:">
+                     <font>
+                        <Font name="Cantarell Thin" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="firstNameField" layoutX="263.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0" promptText="Your initial">
+                     <font>
+                        <Font name="Cantarell Light" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="40.0" layoutY="140.0" prefHeight="60.0" prefWidth="600.0" AnchorPane.leftAnchor="40.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" text="Last Name:">
+                     <font>
+                        <Font name="Cantarell Thin" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="lastNameField" layoutX="263.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0" promptText="Your surname">
+                     <font>
+                        <Font name="Cantarell Light" size="18.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="40.0" layoutY="240.0" prefHeight="60.0" prefWidth="600.0" AnchorPane.leftAnchor="45.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" text="Date of birth:">
+                     <font>
+                        <Font name="Cantarell Thin" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXDatePicker fx:id="dobDatePicker" defaultColor="#004d8f" layoutX="259.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0" promptText="Your date of birth" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="40.0" layoutY="340.0" prefHeight="60.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0" text="Gender:">
+                     <font>
+                        <Font name="Cantarell Thin" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="genderComboBox" layoutX="262.0" layoutY="10.0" prefHeight="40.0" prefWidth="400.0" promptText="Your gender" />
+               </children>
+            </AnchorPane>
+            <JFXButton buttonType="RAISED" layoutX="1197.0" layoutY="496.0" onAction="#menuButton2OnClickAction" style="-fx-background-color: LIGHTCYAN;" text="Next">
+               <font>
+                  <Font name="Cantarell Light" size="20.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8413461538461539" endY="1.0">
+                     <stops>
+                        <Stop color="#08e2ff" />
+                        <Stop color="#61db18" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Label layoutX="57.0" layoutY="456.0" prefHeight="40.0" prefWidth="248.0" text="Are you a merchant?">
+               <font>
+                  <Font name="Cantarell Thin" size="25.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="merchantOption" layoutX="358.0" layoutY="444.0" prefHeight="40.0" prefWidth="400.0" promptText="Select" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
